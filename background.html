@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carpooling</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .header {
+            background-image: url('background.jpg'); /* Replace 'background.jpg' with your image */
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            color: rgb(6, 6, 6);
+            text-align: end; /* Right-align text */
+            display: flex;
+            flex-direction: column;
+            justify-content: end; /* Align content to the end */
+            align-items: center;
+            position: relative; /* Make the parent container for absolute positioning */
+        }
+
+        .header h1 {
+            margin-bottom: 20px;
+        }
+
+        .buttons {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            z-index: 1; /* Ensure the buttons appear above the background image */
+        }
+
+        .buttons button {
+            color: green;
+            text-decoration: none;
+            padding: 5px 10px;
+            margin-left: 10px;
+            border: 1px solid green;
+            border-radius: 5px;
+            cursor: pointer; /* Change cursor to pointer on hover */
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>Welcome to Carpooling</h1>
+    <div class="buttons">
+        <button onclick="login()">Login</button>
+        <button onclick="register()">Register</button>
+    </div>
+</div>
+
+<section id="about" style="background-color: #f9f9f9; padding: 50px;">
+    <div style="max-width: 800px; margin: 0 auto;">
+        <h2>About Carpooling</h2>
+        <p>Carpooling is the sharing of car journeys so that more than one person travels in a car, and prevents the need for others to have to drive to a location themselves.</p>
+        <p>Benefits of carpooling include:</p>
+        <ul>
+            <li>Reduced fuel costs</li>
+            <li>Reduced emissions and environmental impact</li>
+            <li>Less traffic congestion</li>
+            <li>Socializing and meeting new people</li>
+        </ul>
+    </div>
+</section>
+
+<section id="how-it-works" style="background-color: #e9ecef; padding: 50px;">
+    <div style="max-width: 800px; margin: 0 auto;">
+        <h2>How It Works</h2>
+        <p>Using a carpooling service is easy! Here's how:</p>
+        <ol>
+            <li>Sign up for an account.</li>
+            <li>Search for available rides or offer your own.</li>
+            <li>Connect with drivers/passengers and arrange your trip.</li>
+            <li>Enjoy the ride and the benefits of carpooling!</li>
+        </ol>
+    </div>
+</section>
+
+<section id="benefits" style="background-color: #ffffff; padding: 50px;">
+    <div style="max-width: 800px; margin: 0 auto;">
+        <h2>Benefits of Carpooling</h2>
+        <p>There are many advantages to carpooling, including:</p>
+        <ul>
+            <li>Cost savings on fuel and maintenance.</li>
+            <li>Reduced environmental impact and carbon footprint.</li>
+            <li>Less traffic congestion and stress during commute.</li>
+            <li>Opportunity to socialize and make new friends.</li>
+        </ul>
+    </div>
+</section>
+
+<script>
+    function login() {
+        window.location.replace("login.html")
+        alert('Login button clicked');
+    }
+
+    function register() {
+        window.location.replace("registration.html")
+        alert('Register button clicked');
+    }
+</script>
+
+</body>
+</html>
+

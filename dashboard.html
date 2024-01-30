@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driver Dashboard</title>
+    <style>
+        /* CSS styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #3498db;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #2c3e50;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        section {
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+        }
+
+        footer {
+            background-color: #3498db;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome, <span id="driverName"></span>!</h1>
+    <!-- Add profile picture and driver info -->
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#rides">My Rides</a></li>
+        <li><a href="#earnings">Earnings</a></li>
+        <li><a href="#vehicle">Vehicle</a></li>
+        <li><a href="#navigation">Navigation</a></li>
+        <li><a href="#messages">Messages</a></li>
+        <li><a href="#support">Support</a></li>
+        <li><a href="#settings">Settings</a></li>
+    </ul>
+</nav>
+
+<section id="rides">
+    <h2>My Rides</h2>
+    <div class="ride-card">
+        <h3>Ride to Work</h3>
+        <p>Date: January 15, 2024</p>
+        <p>Passengers: 2</p>
+        <p>Status: Upcoming</p>
+        <button>Edit</button>
+        <button>Cancel</button>
+    </div>
+    <div class="ride-card">
+        <h3>Afternoon Pickup</h3>
+        <p>Date: January 16, 2024</p>
+        <p>Passengers: 1</p>
+        <p>Status: Completed</p>
+        <button>View Details</button>
+    </div>
+    <button>Create New Ride</button>
+</section>
+
+<section id="earnings">
+    <h2>Earnings</h2>
+    <div class="earnings-summary">
+        <p>Total Earnings: $500</p>
+        <p>Completed Rides: 20</p>
+        <p>Pending Payments: $50</p>
+    </div>
+    <div class="payment-history">
+        <h3>Payment History</h3>
+        <ul>
+            <li>January 1, 2024 - $30</li>
+            <li>December 28, 2023 - $40</li>
+            <!-- Add more payment history items -->
+        </ul>
+        <button>Withdraw Earnings</button>
+    </div>
+</section>
+
+<section id="vehicle">
+    <h2>Vehicle Information</h2>
+    <p><strong>Make:</strong> <span id="carModel">Toyota</span></p>
+    <p><strong>Car Number:</strong> <span id="carNumber">ABC123</span></p>
+    <p><strong>License Number:</strong> <span id="licenseNumber">XYZ456</span></p>
+</section>
+
+<section id="navigation">
+    <h2>Navigation</h2>
+    <p>Use the map below for easy navigation:</p>
+    <!-- Add your map integration code or embed a map -->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3140.977926987565!2d-122.41953668448212!3d37.77492987975243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sGolden%20Gate%20Bridge!5e0!3m2!1sen!2sus!4v1637359544253!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</section>
+
+<section id="messages">
+    <h2>Messages</h2>
+    <div class="message-thread">
+        <div class="message">
+            <p><strong>Passenger:</strong> Hi, I'll be ready at 8:00 AM.</p>
+            <p><em>Sent: January 14, 2024, 7:30 AM</em></p>
+        </div>
+        <div class="message">
+            <p><strong>You:</strong> Sure, see you then!</p>
+            <p><em>Sent: January 14, 2024, 7:45 AM</em></p>
+        </div>
+        <!-- Add more messages as needed -->
+    </div>
+    <textarea placeholder="Type your message..."></textarea>
+    <button>Send</button>
+</section>
+
+<section id="support">
+    <h2>Support</h2>
+    <p>If you need assistance, contact our support team:</p>
+    <p>Email: support@carpoolapp.com</p>
+    <p>Phone: (123) 456-7890</p>
+</section>
+
+<section id="settings">
+    <h2>Settings</h2>
+    <form>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <label for="notification">Notification Preferences:</label>
+        <select id="notification" name="notification">
+            <option value="email">Email</option>
+            <option value="sms">SMS</option>
+            <option value="both">Both</option>
+            <option value="none">None</option>
+        </select>
+        <button type="submit">Save Changes</button>
+    </form>
+</section>
+
+<script src="dashboard.js">
+</script>
+
+</body>
+</html>
+
+

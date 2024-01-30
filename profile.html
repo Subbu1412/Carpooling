@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #3498db;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        section {
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+        }
+
+        footer {
+            background-color: #3498db;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>User Profile</h1>
+</header>
+
+<section id="profile">
+    <h2>Profile Details</h2>
+    <div class="profile-info">
+        <img src="profile-picture.jpg" alt="User Profile Picture" width="150" height="150">
+        <div class="details">
+            <p><strong>Name:</strong> [User Name]</p>
+            <p><strong>Email:</strong> [user@example.com]</p>
+            <p><strong>Phone:</strong> [123-456-7890]</p>
+            <p><strong>Role:</strong> [Rider/Driver]</p>
+            <p><strong>Rating:</strong> [4.5/5]</p>
+            <p><strong>Joined:</strong> [Join Date]</p>
+        </div>
+    </div>
+</section>
+
+<section id="rides">
+    <h2>Ride History</h2>
+    <div class="ride-history">
+        <div class="ride-card">
+            <h3>Ride to Work</h3>
+            <p>Date: January 15, 2024</p>
+            <p>Status: Completed</p>
+            <p>Driver: [Driver Name]</p>
+            <p>Rating: 5/5</p>
+        </div>
+        <div class="ride-card">
+            <h3>Afternoon Pickup</h3>
+            <p>Date: January 16, 2024</p>
+            <p>Status: Upcoming</p>
+            <p>Driver: [Driver Name]</p>
+        </div>
+    </div>
+</section>
+<script src="profile.js"></script>
+
+</body>
+</html>
